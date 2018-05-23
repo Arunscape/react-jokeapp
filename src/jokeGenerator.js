@@ -14,8 +14,8 @@ export default class JokeGenerator extends Component {
     this.setState({ loading: true, colour: "red" });
 
     const { data: { value: { joke } } } = await axios.get(RANDOM_JOKE_URL);
-    // this.setState({ loading: false, joke, colour: "" });
-    this.setState({ loading: false, joke });
+    this.setState({ loading: false, joke, colour: "" });
+    // this.setState({ loading: false, joke });
   };
 
   render() {
